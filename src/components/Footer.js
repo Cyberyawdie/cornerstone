@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagramSquare } from "@fortawesome/free-brands-svg-icons"
+
 import {
 Box,
 Container,
@@ -30,20 +33,7 @@ return (
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>
-			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
-			</FooterLink>
+			
 			<FooterLink href="#">
 			<i className="fab fa-twitter">
 				<span style={{ marginLeft: "10px" }}>
@@ -59,8 +49,14 @@ return (
 			</i>
 			</FooterLink>
 		</Column>*/}
+        <FooterLink href="https://www.facebook.com/Cornerstone-Medical-Training-Center-107220402082805">
+			<FontAwesomeIcon icon={faFacebook} size="lg"/>
+			</FooterLink>
+			<FooterLink href="https://www.instagram.com/cornerstonemedicaltraining/">			
+            <FontAwesomeIcon icon={faInstagramSquare} size="lg"/>			
+			</FooterLink>
 		</Row> 
-        <Copy><p>&copy; 2022 Cornerstone Medical Training, LLC. All rights reserved.</p></Copy>
+        <Copy>&copy; 2022 Cornerstone Medical Training, LLC. All rights reserved.</Copy>
 	</Container>
 	</Box>
 );

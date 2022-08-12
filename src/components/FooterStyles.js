@@ -36,24 +36,29 @@ padding-right: 20px;
 `;
 
 export const Row = styled.div`
-display: grid;
+display: flex;
+justify-content:center;
 grid-template-columns: repeat(auto-fill,
-						minmax(185px, 1fr));
-grid-gap: 20px;
+						minmax(10px, 1fr));
+grid-gap: 10px;
 
 
 @media (max-width: 1000px) {
 	grid-template-columns: repeat(auto-fill,
-						minmax(200px, 1fr));
+						minmax(10px, 1fr));
+                        grid-gap: 10px;
 }
 `;
 
 export const FooterLink = styled.a`
 color: #fff;
-margin-bottom: 20px;
-font-size: 18px;
+margin-bottom: 1px;
 text-decoration: none;
-
+width: 20px;
+height: 20px;
+position: center;
+display: flex;
+align-items: center;
 &:hover {
 	color: #F4F9FF;
 	transition: 200ms ease-in;
@@ -74,5 +79,9 @@ flex-direction: "column",
 font-size: 14px;
 color: #fff;
 position: relative;
-
+padding-bottom: 20px;
+@media (max-width: 1000px) {
+padding-bottom: 50px;
+margin-top: 5px;
+}
 `;
