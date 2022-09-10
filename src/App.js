@@ -1,22 +1,24 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Footer from "./components/Footer";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+// import Routes from './Routes';
+import Index from './Elearning';
+import Page from './components/Page';
 
-function App() {
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'react-image-lightbox/style.css';
+import 'aos/dist/aos.css';
+
+const App = () => {
   return (
-    <>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Empowering Future Healthcare Leaders</h2>
-          <h3>Coming soon...</h3>
-        </header>
-      </div>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+    <Page>
+      <BrowserRouter>
+        {/* <Routes /> */}
+        <Index/>
+      </BrowserRouter>
+    </Page>
   );
-}
+};
 
 export default App;
